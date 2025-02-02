@@ -1,8 +1,9 @@
 # PAM
 
-`test.py` is used to show how to use FastMNMF tools. `test_audio.mp3` is a "quintet" with flute, trumpet, alto-saxophone, euphonium and bassoon.
+`test_FastMNMF2.ipynb` is used to show how to use FastMNMF tools.
 
-[link](https://youtu.be/XCdNIt_Se50?si=1U2fOHVjpL7izPBR) to `test_audio.mp3`
+`test_pyroomacoustics.ipynb` is used to show how to use pyroomacoustics tools.
+
 
 # Sound Source Separation
 
