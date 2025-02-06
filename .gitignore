@@ -1,1 +1,6 @@
 __pycache__
+audio_dir/bass.wav
+audio_dir/drums.wav
+audio_dir/mixture.wav
+audio_dir/other.wav
+audio_dir/vocals.wav
