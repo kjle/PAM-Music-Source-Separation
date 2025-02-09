@@ -4,6 +4,8 @@
 
 `test_pyroomacoustics.ipynb` is used to show how to use pyroomacoustics tools.
 
+`src_torch_extend` folder contains a modified version of FastMNMF2 method, which can fix W or H during the update period.
+
 
 # Sound Source Separation
 
