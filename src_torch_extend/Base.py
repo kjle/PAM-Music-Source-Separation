@@ -175,7 +175,11 @@ class Base:
         with h5py.File(fname, "w") as f:
             for param in self.save_param_list:
                 data = getattr(self, param)
-                f.create_dataset(param, data=data.cpu())
+                print(f"Save {param} ...")
+                if isinstance(data, torch.Tensor):
+                    f.create_dataset(param, data=data.cpu())
+                else:
+                    f.create_dataset(param, data=data)
             f.flush()
 
     def load_param(self, fname):

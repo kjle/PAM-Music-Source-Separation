@@ -6,6 +6,12 @@
 
 `src_torch_extend` folder contains a modified version of FastMNMF2 method, which can fix W or H during the update period.
 
+Try to use standard nmf to extract dictionary from solo audio, but the result is not good. Therefore, we try to use FastMNMF2 to extract dictionary from solo audio.
+
+Modified FastMNMF2 algo, initialize W or H from dictionary, and replace 0 with EPS or random number.
+
+For now, the best separated result is clarinette, but still not good enough. Piano is better when using dictionary W. Violin is still terrible.
+
 
 # Sound Source Separation
 

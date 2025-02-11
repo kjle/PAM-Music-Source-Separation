@@ -1,3 +1,6 @@
 __pycache__
 result
 classic
+simulated
+dict/*.h5
+*.asd

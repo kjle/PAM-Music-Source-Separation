@@ -87,8 +87,10 @@ class FastMNMF2(Base):
             assert self.matrix_init.shape[0] == self.n_source, "matrix_init must have n_source rows"
             if not isinstance(self.matrix_init, torch.Tensor):
                 self.matrix_init = torch.tensor(self.matrix_init, dtype=self.TYPE_FLOAT, device=self.device)
-                # replace 0 in matrix_init with EPS
+                # replace 0 in matrix_init with gaussian noise
                 self.matrix_init = torch.where(self.matrix_init == 0, EPS, self.matrix_init)
+                # self.matrix_init = torch.where(self.matrix_init == 0, torch.randn_like(self.matrix_init), self.matrix_init)
+
 
 
     def __str__(self):
@@ -196,8 +198,14 @@ class FastMNMF2(Base):
         tmp2_NFT = torch.einsum("nm, ftm -> nft", self.G_NM, 1 / self.Y_FTM)
         numerator = torch.einsum("nkt, nft -> nfk", self.H_NKT, tmp1_NFT)
         denominator = torch.einsum("nkt, nft -> nfk", self.H_NKT, tmp2_NFT)
-        if self.init_WH != 'W':
-            self.W_NFK *= torch.sqrt(numerator / denominator)
+        ratio = numerator / denominator
+        ratio = torch.where(ratio < 0, EPS, ratio)
+        ratio = torch.clamp(ratio, min=EPS) 
+        self.W_NFK *= torch.sqrt(ratio)
+        # self.W_NFK *= torch.sqrt(numerator / denominator)
+        if torch.isnan(self.W_NFK).any():
+            print("nan in W_NFK")
+
         self.calculate_PSD()
         self.calculate_Y()
 
@@ -205,15 +213,23 @@ class FastMNMF2(Base):
         tmp2_NFT = torch.einsum("nm, ftm -> nft", self.G_NM, 1 / self.Y_FTM)
         numerator = torch.einsum("nfk, nft -> nkt", self.W_NFK, tmp1_NFT)
         denominator = torch.einsum("nfk, nft -> nkt", self.W_NFK, tmp2_NFT)
-        if self.init_WH != 'H':
-            self.H_NKT *= torch.sqrt(numerator / denominator)
+        ratio = numerator / denominator
+        ratio = torch.where(ratio < 0, EPS, ratio)
+        ratio = torch.clamp(ratio, min=EPS) 
+        self.H_NKT *= torch.sqrt(ratio)
+        if torch.isnan(self.H_NKT).any():
+            print("nan in H_NKT")
+        # self.H_NKT *= torch.sqrt(numerator / denominator)
         self.calculate_PSD()
         self.calculate_Y()
 
     def update_G(self):
         numerator = torch.einsum("nft, ftm -> nm", self.PSD_NFT, self.Qx_power_FTM / (self.Y_FTM**2))
         denominator = torch.einsum("nft, ftm -> nm", self.PSD_NFT, 1 / self.Y_FTM)
-        self.G_NM *= torch.sqrt(numerator / denominator)
+        ratio = numerator / denominator
+        ratio = torch.where(ratio < 0, EPS, ratio)
+        ratio = torch.clamp(ratio, min=EPS)
+        self.G_NM *= torch.sqrt(ratio)
         self.calculate_Y()
 
     def update_Q_IP(self):
