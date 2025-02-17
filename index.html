@@ -24,6 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+  <!-- <title>Research Project Page</title> -->
   <title>Projets et Applications Musicales - Audio Source Separation</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> --> 
      <!-- Here: you may change to a favicon! We are using an SVG for faster load times and max quality -->
@@ -75,60 +76,60 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Research Project Page</h1>
+            <h1 class="title is-1 publication-title"><p style="font-size: large"> Projets et Applications Musicales</p><br>Audio Source Separation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                 <a href="mailto:azal.lebagousse@ircam.fr" target="_blank">Azal LE BAGOUSSE</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="mailto:robin.wendling@ircam.fr" target="_blank">Robin WENDLING</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="mailto:kang@ircam.fr" target="_blank">Jiale KANG</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">IRCAM</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+                        <span>Paper</span> 
+                      </a> 
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdfs/PAM_Report.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Report</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/kjle/PAM-Music-Source-Separation" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Github</span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -136,7 +137,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -146,12 +147,11 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser video-
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -161,7 +161,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -171,7 +171,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This study investigates the impact of controlled recording conditions on audio source separation by integrating sound recording techniques and numerical signal processing methods. By strategically capturing musical performances with optimized microphone setups to obtain both mixtures and isolated instrument tracks, different levels of separation effectiveness can be achieved. Prior knowledge, in the form of a dictionary of notes obtained by recording each instrument individually, can be incorporated to guide the separation process. Both traditional signal processing methods (Gaussian MNMF, FastMNMF2, ILRMA) and deep learning models (Demucs, Spleeter) were evaluated. Subjective (listening task) and objective (numerical metrics) methods were used for the evaluation of all algorithms.
           </p>
         </div>
       </div>
@@ -179,6 +179,33 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<h2 class="title is-e has-text-centered">Classical Configuration</h1>
+<!-- Audio Results-->
+<section class="hero is-small">
+  <!-- <div class="container"> -->
+    <div class="table-container" style="text-align: center;">
+      <div class="table">
+        <div class="row header">
+          <div class="cell">Categories</div>
+          <div class="cell">FastMNMF2</div>
+          <div class="cell">ILRMA</div>
+          <div class="cell">HT-Demucs</div>
+          <div class="cell">Reference</div>
+        </div>
+
+        <div class="row">
+          <div class="cell audio-name">Reconstruction</div>
+          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/fastmnmf2.wav" type="audio/mpeg"></audio></div>
+          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/ilrma.wav" type="audio/mpeg"></audio></div>
+          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/demuc.wav" type="audio/mpeg"></audio></div>
+          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/reference.wav" type="audio/mpeg"></audio></div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</section>
+
 
 
 <!-- Image carousel -->
