@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="PAM: Source Separation">
-  <meta property="og:title" content="PAM: Source Separation"/>
-  <meta property="og:description" content="Source Separation"/>
-  <meta property="og:url" content="https://kjle.github.io/PAM-Music-Source-Separation/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/banner.jpeg" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+	<head>
+		<meta charset="utf-8">
+		<!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+		<!-- Replace the content tag with appropriate information -->
+		<meta name="description" content="PAM: Source Separation">
+		<meta property="og:title" content="PAM: Source Separation" />
+		<meta property="og:description" content="Source Separation" />
+		<meta property="og:url" content="https://kjle.github.io/PAM-Music-Source-Separation/" />
+		<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+		<meta property="og:image" content="static/image/banner.jpeg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
 
 
-  <meta name="twitter:title" content="PAM: Source Separation">
-  <meta name="twitter:description" content="PAM: Source Separation">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/banner.jpeg">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="ATIAM PAM Source Separation">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="twitter:title" content="PAM: Source Separation">
+		<meta name="twitter:description" content="PAM: Source Separation">
+		<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+		<meta name="twitter:image" content="static/images/banner.jpeg">
+		<meta name="twitter:card" content="summary_large_image">
+		<!-- Keywords for your paper to be indexed by-->
+		<meta name="keywords" content="ATIAM PAM Source Separation">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!-- <title>Research Project Page</title> -->
-  <title>Projets et Applications Musicales - Audio Source Separation</title>
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> --> 
-     <!-- Here: you may change to a favicon! We are using an SVG for faster load times and max quality -->
-  <link rel="icon" type="image/svg" href='static/images/icon.svg' />
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+		<!-- <title>Research Project Page</title> -->
+		<title>Projets et Applications Musicales - Audio Source Separation</title>
+		<!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+		<!-- Here: you may change to a favicon! We are using an SVG for faster load times and max quality -->
+		<link rel="icon" type="image/jpeg" href='static/images/banner.jpeg' />
+    <!-- <link rel="icon" type="image/svg" href='static/images/icon.svg' /> -->
+		<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/code.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
-
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  <script src="static/js/copy-button.js"></script>
-  <textarea id="hidden-textarea" style="position: absolute; left: -9999px;" aria-hidden="true"></textarea>
+		<link rel="stylesheet" href="static/css/bulma.min.css">
+		<link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+		<link rel="stylesheet" href="static/css/bulma-slider.min.css">
+		<link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+		<link rel="stylesheet" href="static/css/index.css">
+		<link rel="stylesheet" href="static/css/code.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 
 
-<!-- Note: comment below if not needed for faster loading -->
-<!-- Syntax highlighting for code cells -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-<script>hljs.highlightAll();</script>
-
-<!-- Math rendering -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+		<script defer src="static/js/fontawesome.all.min.js"></script>
+		<script src="static/js/bulma-carousel.min.js"></script>
+		<script src="static/js/bulma-slider.min.js"></script>
+		<script src="static/js/index.js"></script>
+		<script src="static/js/copy-button.js"></script>
+		<textarea id="hidden-textarea" style="position: absolute; left: -9999px;" aria-hidden="true"></textarea>
 
 
-</head>
+		<!-- Note: comment below if not needed for faster loading -->
+		<!-- Syntax highlighting for code cells -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+		<script>hljs.highlightAll();</script>
 
-<body>
+		<!-- Math rendering -->
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+				onload="renderMathInElement(document.body);"></script>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><p style="font-size: large"> Projets et Applications Musicales</p><br>Audio Source Separation</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                 <a href="mailto:azal.lebagousse@ircam.fr" target="_blank">Azal LE BAGOUSSE</a>,</span>
-                <span class="author-block">
-                  <a href="mailto:robin.wendling@ircam.fr" target="_blank">Robin WENDLING</a>,</span>
-                  <span class="author-block">
-                    <a href="mailto:kang@ircam.fr" target="_blank">Jiale KANG</a>
-                  </span>
-                  </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">IRCAM</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+	</head>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <!-- <span class="link-block">
+	<body>
+
+		<section class="hero">
+			<div class="hero-body">
+				<div class="container is-max-desktop">
+					<div class="columns is-centered">
+						<div class="column has-text-centered">
+							<h1 class="title is-1 publication-title">
+								<p style="font-size: large"> Projets et Applications Musicales</p>
+								<br>Audio Source Separation
+							</h1>
+							<div class="is-size-5 publication-authors">
+								<!-- Paper authors -->
+								<span class="author-block">
+									<a href="mailto:azal.lebagousse@ircam.fr" target="_blank">Azal LE BAGOUSSE</a>,
+								</span>
+								<span class="author-block">
+									<a href="mailto:robin.wendling@ircam.fr" target="_blank">Robin WENDLING</a>,
+								</span>
+								<span class="author-block">
+									<a href="mailto:kang@ircam.fr" target="_blank">Jiale KANG</a>
+								</span>
+							</div>
+
+							<div class="is-size-5 publication-authors">
+								<span class="author-block">IRCAM</span>
+								<!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+							</div>
+
+							<div class="column has-text-centered">
+								<div class="publication-links">
+									<!-- Arxiv PDF link -->
+									<!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -106,30 +110,28 @@
                       </a> 
                     </span> -->
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/PAM_Report.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Report</span>
-                    </a>
-                  </span>
+									<!-- Supplementary PDF link -->
+									<span class="link-block">
+										<a href="static/pdfs/PAM_Report.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+											<span class="icon">
+												<i class="fas fa-file-pdf"></i>
+											</span>
+											<span>Report</span>
+										</a>
+									</span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/kjle/PAM-Music-Source-Separation" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Github</span>
-                  </a>
-                </span>
+									<!-- Github link -->
+									<span class="link-block">
+										<a href="https://github.com/kjle/PAM-Music-Source-Separation" target="_blank" class="external-link button is-normal is-rounded is-dark">
+											<span class="icon">
+												<i class="fab fa-github"></i>
+											</span>
+											<span>Github</span>
+										</a>
+									</span>
 
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
+									<!-- ArXiv abstract Link -->
+									<!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -138,16 +140,16 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
-<!-- Teaser video-
+		<!-- Teaser video-
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -163,191 +165,588 @@
 </section>
 End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            This study investigates the impact of controlled recording conditions on audio source separation by integrating sound recording techniques and numerical signal processing methods. By strategically capturing musical performances with optimized microphone setups to obtain both mixtures and isolated instrument tracks, different levels of separation effectiveness can be achieved. Prior knowledge, in the form of a dictionary of notes obtained by recording each instrument individually, can be incorporated to guide the separation process. Both traditional signal processing methods (Gaussian MNMF, FastMNMF2, ILRMA) and deep learning models (Demucs, Spleeter) were evaluated. Subjective (listening task) and objective (numerical metrics) methods were used for the evaluation of all algorithms.
-          </p>
+		<!-- Paper abstract -->
+		<section class="section hero is-light">
+			<div class="container is-max-desktop">
+				<div class="columns is-centered has-text-centered">
+					<div class="column is-four-fifths">
+						<h2 class="title is-3">Abstract</h2>
+						<div class="content has-text-justified">
+							<p>
+								This study investigates the impact of controlled recording conditions on audio source separation by integrating sound recording techniques and numerical signal processing methods. By strategically capturing musical performances with optimized microphone setups to obtain both mixtures and isolated instrument tracks, different levels of separation effectiveness can be achieved. Prior knowledge, in the form of a dictionary of notes obtained by recording each instrument individually, can be incorporated to guide the separation process. Both traditional signal processing methods (Gaussian MNMF, FastMNMF2, ILRMA) and deep learning models (Demucs, Spleeter) were evaluated. Subjective (listening task) and objective (numerical metrics) methods were used for the evaluation of all algorithms.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End paper abstract -->
+
+		<section class="section hero">
+      <div class="container" style="margin-bottom: 20px;">
+        <h2 class="title is-3 has-text-centered">Audio Results</h2>
+      </div>
+      <div class="container" style="margin-bottom: 20px;">
+        <h3 class="title is-4 has-text-justified">Music configurations</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <ul>
+              <li><b>Classical Configuration</b>
+                <p>
+                  Classical music was chosen from <em>Trio No. 2 in E-flat major</em> by F. Schubert for classical, replacing the cello by the clarinet to be able to also study a wind instrument.
+                </p>
+              </li>
+              <li><b>Jazz Configuration</b>
+                <p>
+                  Jazz music was chosen from <em>Fly me to the Moon</em> by B. Howard.
+                </p>
+            </ul>
+
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+ 
 
-<h2 class="title is-e has-text-centered" style="margin-top: 20px;">Classical Configuration</h1>
-<section class="hero is-small">
-    <div class="table-container" style="text-align: center;">
-      <div class="table">
-        <div class="row header">
-          <div class="cell">Categories</div>
-          <div class="cell">FastMNMF2</div>
-          <div class="cell">ILRMA</div>
-          <div class="cell">HT-Demucs</div>
-          <div class="cell">Reference<sup>*</sup></div>
-        </div>
-
-        <div class="row">
-          <div class="cell audio-name">Reconstruction</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/reconstruction/reference.wav" type="audio/mpeg"></audio></div>
-        </div>
-
-        <div class="row">
-          <div class="cell audio-name">Piano</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/piano/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/piano/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/piano/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/piano/reference.wav" type="audio/mpeg"></audio></div>
-        </div>
-
-        <div class="row">
-          <div class="cell audio-name">Clarinet</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/clarinette/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/clarinette/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/clarinette/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/clarinette/reference.wav" type="audio/mpeg"></audio></div>
-        </div>
-
-        <div class="row">
-          <div class="cell audio-name">Violin</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/violin/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/violin/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/violin/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/classical/violin/reference.wav" type="audio/mpeg"></audio></div>
+      <div class="container" style="margin-bottom: 20px;">
+        <h3 class="title is-4 has-text-justified">Gaussian MNMF</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Sawada et al.<sup><a href="#ref1">[1]</a></sup> proposed a multichannel extensionof Non-negative Matrix Factorization (NMF), GaussM-NMF, which extends conventional NMF to handlecomplex-valued data by modeling the spatial character-istics of audio signals using a complex Gaussian distri-bution, which forms the theoretical foundation for thesubsequent methods.
+            </p>
+            <p>
+              Here we only show the output of different microphone configurations (ORTF and Auxilaiary) as input to the Gaussian MNMF algorithm. We take Jazz Configuration of music as an example.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="is-size-7" style="text-align: center;"><sup>*</sup> For reconstruction, reference is ORTF recorded audio. For others, reference is auxiliary microphone recorded audio.</div>
-
-</section>
-
-<h2 class="title is-e has-text-centered" style="margin-top: 20px;">Jazz Configuration</h1>
-<section class="hero is-small">
-    <div class="table-container" style="text-align: center;">
-      <div class="table">
-        <div class="row header">
-          <div class="cell">Categories</div>
-          <div class="cell">FastMNMF2</div>
-          <div class="cell">ILRMA</div>
-          <div class="cell">HT-Demucs</div>
-          <div class="cell">Spleeter</div>
-          <div class="cell">Reference<sup>*</sup></div>
+      <div class="table-container" style="text-align: center; margin-bottom: 20px;">
+        <div class="table">
+          <div class="row header">
+            <div class="cell">Microphone Setting</div>
+            <div class="cell">Channel 1 / Bass</div>
+            <div class="cell">Channel 2 / Percussion</div>
+            <div class="cell">Channel 3 / Piano</div>
+            <div class="cell">Channel 4 / Saxophone</div>
+            <div class="cell">Channel 5 / Voice</div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">ORTF</div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/ORTF/gauss_i1_ortf.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/ORTF/gauss_i2_ortf.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/ORTF/gauss_i3_ortf.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/ORTF/gauss_i4_ortf.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/ORTF/gauss_i5_ortf.wav" type="audio/mpeg"></audio></div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">Auxilaiary</div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/Auxilary/gauss_bass_5inst.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/Auxilary/gauss_percu_5inst.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/Auxilary/gauss_piano_5inst.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/Auxilary/gauss_saxo_5inst.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/gaussianmnmf/Auxilary/gauss_voix_5inst.wav" type="audio/mpeg"></audio></div>
+          </div>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="cell audio-name">Reconstruction</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/reconstruction/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/reconstruction/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/reconstruction/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/reconstruction/spleeter.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/reconstruction/reference.wav" type="audio/mpeg"></audio></div>
+      <div class="container" style="margin-bottom: 20px;">
+        <h3 class="title is-4 has-text-justified">FastMNMF2</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Building  upon  the  complete  GaussMNMF  model, FastMNMF2 <sup><a href="#ref2">[2]</a></sup> introduces a key simplification to reducethe computational complexity of the spatial modeling.
+            </p>
+            <p>
+              Here we use the ORTF setting (4 channels) plus Auxilairy (4 channels), or Room Response (1 channel) or Soundfield (4 channels) as input to the FastMNMF2 algorithm. We take Jazz Configuration of music as an example.
+            </p>
+          </div>
         </div>
-
-        <div class="row">
-          <div class="cell audio-name">Piano</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/piano/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/piano/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell">N/A</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/piano/spleeter.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/piano/reference.wav" type="audio/mpeg"></audio></div>
-        </div>        
-
-        <div class="row">
-          <div class="cell audio-name">Bass</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/bass/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/bass/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/bass/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/bass/spleeter.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/bass/reference.wav" type="audio/mpeg"></audio></div>
-        </div> 
-        
-        <div class="row">
-          <div class="cell audio-name">Percussion</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/drum/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/drum/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/drum/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/drum/spleeter.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/drum/reference.wav" type="audio/mpeg"></audio></div>
-        </div>  
-        
-        <div class="row">
-          <div class="cell audio-name">Saxophone</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/saxophone/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/saxophone/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell">N/A</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/saxophone/spleeter.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/saxophone/reference.wav" type="audio/mpeg"></audio></div>
-        </div> 
-
-        <div class="row">
-          <div class="cell audio-name">Voice</div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/voice/fastmnmf2.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/voice/ilrma.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/voice/demuc.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/voice/spleeter.wav" type="audio/mpeg"></audio></div>
-          <div class="cell"><audio controls><source src="static/Audios/mushra/jazz/voice/reference.wav" type="audio/mpeg"></audio></div>
-        </div>        
       </div>
-    </div>
-    <div class="is-size-7" style="text-align: center;"><sup>*</sup> For reconstruction, reference is ORTF recorded audio. For others, reference is auxiliary microphone recorded audio.</div>
-
-</section>
-
-
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <div class="table-container" style="text-align: center; margin-bottom: 20px;">
+        <div class="table">
+          <div class="row header">
+            <div class="cell">Microphone Setting</div>
+            <div class="cell">Channel 1</div>
+            <div class="cell">Channel 2</div>
+            <div class="cell">Channel 3</div>
+            <div class="cell">Channel 4</div>
+            <div class="cell">Channel 5</div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">ORTF + Auxilairy</div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+individual/01-FastMNMF2_IP-sep-20250212-190751-M=10-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_indv-1000 1.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+individual/02-FastMNMF2_IP-sep-20250212-190751-M=10-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_indv-1000 2.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+individual/03-FastMNMF2_IP-sep-20250212-190751-M=10-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_indv-1000 3.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+individual/04-FastMNMF2_IP-sep-20250212-190751-M=10-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_indv-1000 4.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+individual/05-FastMNMF2_IP-sep-20250212-190751-M=10-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_indv-1000 5.wav" type="audio/mpeg"></audio></div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">ORTF + Room Response</div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+salle/01-FastMNMF2_IP-sep-20250212-192109-M=5-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_salle-1000 1.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+salle/02-FastMNMF2_IP-sep-20250212-192109-M=5-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_salle-1000 2.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+salle/03-FastMNMF2_IP-sep-20250212-192109-M=5-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_salle-1000 3.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+salle/04-FastMNMF2_IP-sep-20250212-192109-M=5-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_salle-1000 4.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+salle/05-FastMNMF2_IP-sep-20250212-192109-M=5-S=5-F=2049-K=36-dict=None-init=circular-g=0.0005-bit=32-intv_norm=10-ID=ortf_salle-1000 5.wav" type="audio/mpeg"></audio></div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">ORTF + Soundfield</div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+sf/01-FastMNMF2_IP-sep-20250217-223823-M=6-S=5-F=2049-K=36-dict=None-init=circular-g=5e-05-bit=32-intv_norm=10-ID=ortf_sf-200 1.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+sf/02-FastMNMF2_IP-sep-20250217-223823-M=6-S=5-F=2049-K=36-dict=None-init=circular-g=5e-05-bit=32-intv_norm=10-ID=ortf_sf-200 2.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+sf/03-FastMNMF2_IP-sep-20250217-223823-M=6-S=5-F=2049-K=36-dict=None-init=circular-g=5e-05-bit=32-intv_norm=10-ID=ortf_sf-200 3.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+sf/04-FastMNMF2_IP-sep-20250217-223823-M=6-S=5-F=2049-K=36-dict=None-init=circular-g=5e-05-bit=32-intv_norm=10-ID=ortf_sf-200 4.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/fastmnmf/ortf+sf/05-FastMNMF2_IP-sep-20250217-223823-M=6-S=5-F=2049-K=36-dict=None-init=circular-g=5e-05-bit=32-intv_norm=10-ID=ortf_sf-200 5.wav" type="audio/mpeg"></audio></div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+
+      <div class="container" style="margin-bottom: 20px;">
+        <h3 class="title is-4 has-text-justified">ILRMA</h3>
       </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
+      <div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Independent Low-Rank Matrix Analysis (ILRMA) <sup><a href="#ref1">[3]</a></sup> is essentially a variant of the FastMNMF2 method withstricter spatial modeling assumptions.  While FastM-NMF2 employs a full-rank spatial model—using jointlydiagonalizable  covariance  matrices  with  frequency-invariant eigenvalues to capture complex acoustic ef-fects—ILRMA enforces a rank-1 constraint on eachsource's spatial covariance matrix.  This means thateach source is modeled by a single mixing vector, reduc-ing the number of parameters and computational costwhile often enhancing robustness in both determinedand overdetermined scenarios.
+            </p>
+            <p>
+              Here we only show the output of Soundfield or Auxilaiary microphone as input to the ILRMA algorithm. We take Classical Configuration of music as an example.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="table-container" style="text-align: center; margin-bottom: 20px;">
+        <div class="table">
+          <div class="row header">
+            <div class="cell">Microphone Setting</div>
+            <div class="cell">Clarinet</div>
+            <div class="cell">Piano</div>
+            <div class="cell">Violin</div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">Auxilaiary</div>
+            <div class="cell"><audio controls><source src="static/Audios/ilrma/auxilary/clarinette.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/ilrma/auxilary/piano.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/ilrma/auxilary/violin.wav" type="audio/mpeg"></audio></div>
+          </div>
+          <div class="row">
+            <div class="cell audio-name">Soundfield</div>
+            <div class="cell"><audio controls><source src="static/Audios/ilrma/sf/clarinette.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/ilrma/sf/piano.wav" type="audio/mpeg"></audio></div>
+            <div class="cell"><audio controls><source src="static/Audios/ilrma/sf/violin.wav" type="audio/mpeg"></audio></div>
+          </div>
+        </div>
+      </div>
+
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<h3 class="title is-4 has-text-centered">MUSHRA Evaluation</h3>
+					<div class="content has-text-justified">
+						<p>
+							The <strong>MUltiple Stimuli with Hidden Reference and Anchor</strong> (MUSHRA) <sup><a href="#ref1">[4]</a></sup> is a well-known testing method initially designed for measure the perceptual quality of audio codecs. It can present multiple versions of the same signal, including the original, processed, and degraded versions. Listeners provide scores based on their perceived quality. This method allows a detailed, fine-grained scoring, and enables to compare multiple systems simultaneously. It use a hidden reference and anchor, ensuring an objective calibration. All tracks shown in the MUSHRA test were obtained using the main mixture that was recorded with the bar of 4 cardioid microphones as the algorithms input.
+						</p>
+
+						<p>
+							MUSHRA evaluation could found <a href="https://perso.telecom-paristech.fr/jkang-23/Evaluation/">here</a> but the answer will not be counted anymore.
+						</p>
+					</div>
+
+          <div class="table-container" style="text-align: center; margin-bottom: 20px;">
+            <div class="table">
+              <div class="row header">
+                <div class="cell">Classical Config</div>
+                <div class="cell">FastMNMF2</div>
+                <div class="cell">ILRMA</div>
+                <div class="cell">HT-Demucs</div>
+                <div class="cell">Reference<sup>*</sup>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Reconstruction</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/reconstruction/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/reconstruction/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/reconstruction/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/reconstruction/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Piano</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/piano/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/piano/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/piano/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/piano/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Clarinet</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/clarinette/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/clarinette/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/clarinette/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/clarinette/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Violin</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/violin/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/violin/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/violin/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/classical/violin/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-container" style="text-align: center;">
+            <div class="table">
+              <div class="row header">
+                <div class="cell">Jazz Config</div>
+                <div class="cell">FastMNMF2</div>
+                <div class="cell">ILRMA</div>
+                <div class="cell">HT-Demucs</div>
+                <div class="cell">Spleeter</div>
+                <div class="cell">Reference<sup>*</sup>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Reconstruction</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/reconstruction/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/reconstruction/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/reconstruction/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/reconstruction/spleeter.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/reconstruction/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Piano</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/piano/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/piano/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">N/A</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/piano/spleeter.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/piano/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Bass</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/bass/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/bass/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/bass/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/bass/spleeter.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/bass/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Percussion</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/drum/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/drum/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/drum/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/drum/spleeter.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/drum/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Saxophone</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/saxophone/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/saxophone/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">N/A</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/saxophone/spleeter.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/saxophone/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell audio-name">Voice</div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/voice/fastmnmf2.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/voice/ilrma.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/voice/demuc.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/voice/spleeter.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+                <div class="cell">
+                  <audio controls>
+                    <source src="static/Audios/mushra/jazz/voice/reference.wav" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="is-size-7" style="text-align: center;">
+            <sup>*</sup> For reconstruction, reference is ORTF recorded audio. For others, reference is auxiliary microphone recorded audio.
+          </div>
+				</div>
+			</div>
+		</section>
 
 
-<!-- Embedded Google Slides -->
-<section class="google-slides-section">
-  <div class="google-slides-container">
-    <h2 class="title is-2 has-text-centered mb-6">Google Slides</h2>
-    <div class="responsive-iframe-container">
-      <iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vSxPBfuH2Ydrc3Y1y7YTjGar-IQ-RG6HoTHbQs3sAboDD5tp-aL66-AESeK35P7JmvKJx9GEAgHIvsu/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </div>
-  </div>
-</section>
-<!-- End embedded Google Slides -->
+	  <section class="section hero is-light">
+      <div class="container" style="margin-bottom: 20px;">
+        <h2 class="title is-3 has-text-centered">Recording Session</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>The recording session took place on Tuesday, February3, 2025, in the auditorium of the CRR 93. The recording process was supported by two conservatory students managing the control room and computer, along with two interns and one of the professors overseeing this project.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<!-- 
+      <div class="container">
+        <h3 class="title is-4 has-text-justified">Photos</h3>
+      </div>
+
+      <div class="hero-body">
+        <div class="container">
+          <div id="recording-pic" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/recording/recording (1).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (2).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (3).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (4).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (5).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (6).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (7).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (8).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (9).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (10).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (11).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+            <div class="item">
+              <img src="static/images/recording/recording (12).jpg" alt="PHOTO OF RECORDING"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="title is-4 has-text-justified">Videos</h3>
+      </div>
+
+      <div class="hero-body">
+        <div class="container">
+          <div id="recording-vdo" class="carousel results-carousel">
+            <div class="item">
+              <video poster="" id="classical" controls muted height="100%">
+                <source src="static/videos/video_classical_recording.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item">
+              <video poster="" id="jazz" controls muted height="100%">
+                <source src="static/videos/video_jazz_recording.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<!-- Embedded Google Slides -->
+		<!-- <section class="google-slides-section"> -->
+    <section class="section hero">
+			<div class="google-slides-container">
+				<h2 class="title is-3 has-text-centered mb-6">Presentation Support</h2>
+				<div class="responsive-iframe-container">
+					<iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vSxPBfuH2Ydrc3Y1y7YTjGar-IQ-RG6HoTHbQs3sAboDD5tp-aL66-AESeK35P7JmvKJx9GEAgHIvsu/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- End embedded Google Slides -->
+
+		<!-- 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -364,7 +763,7 @@ End teaser video -->
   </div>
 </section> -->
 
-<!-- <section class="hero teaser">
+		<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Math</h2>
     <div class="hero-body">
@@ -378,7 +777,7 @@ End teaser video -->
   </div>
 </section> -->
 
-<!-- <section class="hero is-small">
+		<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -406,7 +805,7 @@ End teaser video -->
   </div>
 </section> -->
 
-<!-- 
+		<!-- 
 <section class="section" id="Code">
   <div class="container is-max-desktop content">
     <h2 class="title">Example Code</h2>
@@ -437,7 +836,7 @@ def foo(a):
 
 
 
-<!-- <section class="hero is-small is-light">
+		<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -449,7 +848,7 @@ def foo(a):
     </div>
   </section> -->
 
-<!-- 
+		<!-- 
 <section class="section" id="Code">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -475,27 +874,53 @@ def foo(a):
 </section>
     
 </section> -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/ai4co/research-project-page-template" target="_blank">Research Project Page Template</a> which is based on 
-            the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and the 
-            <a href="https://nerfies.github.io" target="_blank">Nerfies project page</a>. You are free to borrow the of this website, we just ask that you link back to this page in the footer.
-            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">References</h2>
   </div>
-</footer>
+  <div class="container is-max-desktop" style="margin-top: 20px;">
+    <ol>
+      <li id="ref1">
+        H. Sawada, H. Kameoka, S. Araki and N. Ueda, "Multichannel Extensions of Non-Negative Matrix Factorization With Complex-Valued Data," in <em>IEEE Transactions on Audio, Speech, and Language Processing</em>, vol. 21, no. 5, pp. 971-982, May 2013, doi: 10.1109/TASL.2013.2239990.
+        <!-- Sawada, H., Araki, S., & Makino, S. (2007). <em>Multichannel extension of non-negative matrix factorization with complex-valued data</em>. IEEE Transactions on Audio, Speech, and Language Processing, 15(3), 871-881. <a href="https://doi.org/10.1109/TASL.2006.885933" target="_blank">https://doi.org/10.1109/TASL.2006.885933</a> -->
+      </li>
+      <li id="ref2">
+        K. Sekiguchi, Y. Bando, A. A. Nugraha, K. Yoshii and T. Kawahara, "Fast Multichannel Nonnegative Matrix Factorization With Directivity-Aware Jointly-Diagonalizable Spatial Covariance Matrices for Blind Source Separation," in <em>IEEE/ACM Transactions on Audio, Speech, and Language Processing</em>, vol. 28, pp. 2610-2625, 2020, doi: 10.1109/TASLP.2020.3019181.
+        <!-- Vincent, E., Bertin, N., Gribonval, R., & Bimbot, F. (2006). <em>Performance measurement in blind audio source separation</em>. IEEE Transactions on Audio, Speech, and Language Processing, 14(4), 1462-1469. <a href="https://doi.org/10.1109/TSA.2005.858005" target="_blank">https://doi.org/10.1109/TSA.2005.858005</a> -->
+      </li>
+      <li id="ref3">
+        N. Ono, "Stable and fast update rules for independent vector analysis based on auxiliary function technique," <em>2011 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)</em>, New Paltz, NY, USA, 2011, pp. 189-192, doi: 10.1109/ASPAA.2011.6082320.
+      </li>
+      <li id="ref4">
+        Schoeffler, M. et al., (2018). webMUSHRA — A Comprehensive Framework for Web-based Listening Tests. <em>Journal of Open Research Software</em>. 6(1), p.8.
+      </li>
+    </ol>
+  </div>
+</section>
 
-  </body>
-  </html>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column is-8">
+						<div class="content">
+              <p>
+                This project is supported by the <a href="https://www.telecom-paris.fr/en" target="_blank">Télécom Paris</a>, <a href="https://stages.sorbonne-universite.fr/">Sorbonne Universié</a> and <a href="https://www.ircam.fr/" target="_blank">IRCAM</a>.
+              </p>
+
+							<p>
+								This page was built using the <a href="https://github.com/ai4co/research-project-page-template" target="_blank">Research Project Page Template</a> which is based on
+								the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and the
+								<a href="https://nerfies.github.io" target="_blank">Nerfies project page</a>. You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+								This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+									Commons Attribution-ShareAlike 4.0 International License</a>.
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

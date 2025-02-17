@@ -121,13 +121,28 @@ body {
   font-size: 0;
 }
 
+.item img {
+  width: auto;
+  height: 600px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .results-carousel video {
-  margin: 0;
+  width: auto;
+  height: 600px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .results-carousel audio {
   margin: 0;
 }
+
 
 .slider-pagination .slider-page {
   background: #000000;
@@ -201,7 +216,7 @@ body {
 
 .table {
   width: 100%;
-  max-width: 800px; /* 根据需要调整最大宽度 */
+  max-width: 800px; /* 根据需要调整最大宽�? */
   margin: 0 auto;
 }
 
@@ -236,7 +251,7 @@ body {
 }
  
 audio {
-  width: 100%; /* 设置音频控件的宽度 */
-  max-width: 150px; /* 控制音频控件的最大宽度 */
-  min-width: 100px; /* 控制音频控件的最小宽度 */
+  width: 100%; /* 设置音频控件的宽�? */
+  max-width: 150px; /* 控制音频控件的最大宽�? */
+  min-width: 100px; /* 控制音频控件的最小宽�? */
 }
